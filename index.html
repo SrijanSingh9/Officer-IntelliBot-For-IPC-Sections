@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="">
+
+  <title>Officer IntelliBot For IPC Sections</title>
+
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+
+  <!-- Botpress Scripts -->
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+  <script src="https://mediafiles.botpress.cloud/33f5f219-82fa-40a3-b215-fdd0e37f6856/webchat/config.js" defer></script>
+
+  <!-- Inline Styles -->
+  <style>
+    body {
+      font-family: 'Oswald', sans-serif;
+      color: #333;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    #headerwrap {
+      background-color: #6874fc;
+      padding: 2em 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .logo img {
+      max-width: 100px;
+    }
+    h1, h3 {
+      color: white;
+    }
+    #f {
+      padding: 2em 0;
+      margin: 2em 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .container {
+      text-align: center;
+    }
+    .row {
+      margin: 0;
+      padding: 0;
+    }
+    .centered {
+      margin: 0 auto;
+    }
+    p {
+      padding: 1em;
+      color: #333;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 900px; /* Increased max-width */
+      margin: 1em auto;
+    }
+    .btn {
+      background-color: #ffcc00;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #333;
+      cursor: pointer;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .btn:hover {
+      background-color: #e6b800;
+    }
+    .carousel-inner img {
+      max-width: 60%;
+      border-radius: 18px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .carousel-indicators li {
+      background-color: #6874fc;
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#theMenu">
+  
+  <!-- Header Section -->
+  <section id="home" name="home"></section>
+  <div id="headerwrap">
+    <div class="container">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo">
+      </div>
+      <br>
+      <div class="row">
+        <h1>Welcome to IntelliBot for helping find the right IPC Sections</h1>
+        <br>
+        <h3>I am here to assist police officers in accurately drafting FIRs by providing real-time, relevant IPC sections based on complaint details. <br> This ensures precision and efficiency in legal documentation, mitigating the lack of legal expertise at police stations.</h3>
+        <br><br>
+        <div class="col-lg-6 col-lg-offset-3"></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- About Section -->
+  <section id="about" name="about"></section>
+  <div id="f">
+    <div class="container">
+      <div class="row">
+        <h3 style="color: #6874fc; font-weight: 700;">ABOUT OUR BOT</h3>
+        
+        <!-- Intro Information -->
+        <div class="col-lg-6 col-lg-offset-3">
+          <p>I am created using BotPress.com designed to assist police officers in accurately drafting First Information Reports (FIRs). Integrated seamlessly into this static webpage, I uses advanced natural language processing to analyze complaint details and provide the relevant IPC sections and acts in real-time. I ensures precision and efficiency in legal documentation, addressing the challenge of limited legal expertise at police stations. By offering immediate access to accurate legal information, I am made in a way to enhances the quality of FIRs and supports effective investigation and justice.</p>
+        </div>                
+      </div>
+    </div>
+  </div>
+  
+  <!-- Carousel Section -->
+  <section id="portfolio" name="portfolio"></section>
+  <div id="f" style="background-color: #f4f4f4;">
+    <div class="container">
+      <div class="row centered">
+        <h3 style="color: #6874fc; font-weight: 700;">SOME EXAMPLE PROMPTS FOR THE BOT</h3> 
+        <div class="col-lg-6 col-lg-offset-3">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active centered">
+                <img class="img-responsive" src="assets/c1.png" alt="Example Prompt 1">
+              </div>
+              <div class="item centered">
+                <img class="img-responsive" src="assets/c2.png" alt="Example Prompt 2">
+              </div>
+              <div class="item centered">
+                <img class="img-responsive" src="assets/c3.png" alt="Example Prompt 3">
+              </div>
+            </div>
+            <br>
+          </div>
+        </div><!-- col-lg-8 -->
+      </div><!-- row -->
+    </div><!-- container -->
+  </div><!-- f -->
+  
+  <!-- Error Section -->
+  <section id="contact" name="contact"></section>
+  <div id="f">
+    <div class="container">
+      <div class="row">
+        <h3 style="color: #6874fc; font-weight: 700;">If BOT IS NOT ACCESSIBLE</h3>
+        
+        <div class="col-lg-6 col-lg-offset-4">
+          <p>Click the following button if you are not able to use the chat button on the lower right side of the page</p>
+          <a href="https://mediafiles.botpress.cloud/33f5f219-82fa-40a3-b215-fdd0e37f6856/webchat/bot.html"><button type="button" class="btn">Click here</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="botpress-webchat">
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/33f5f219-82fa-40a3-b215-fdd0e37f6856/webchat/config.js" defer></script>
+  </div>
+</body>
+</html>
